@@ -1,0 +1,3 @@
+10:10 herhangi bir elemente 0pxden veya bir x px'den otomatik alabileceği kadarlık 
+bütün hight'a gittiği alan içerisine bir transition vermek istiyon 
+o elemente display:grid; grid-template-rows: 0fr;  verip

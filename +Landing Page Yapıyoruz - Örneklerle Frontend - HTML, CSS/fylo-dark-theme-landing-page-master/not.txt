@@ -1,0 +1,5 @@
+-08:00 -> Dizayn karşımıza gelince kafada box-modelling özelliğini oturmak lazım
+
+-11:08 cntainer nedir? sağdan soldan bir boşluk var. Herşey bir dikdörtgen içerisinde gibi. Bu ornekte bir tane var. Bazı sitelerde birakaç tane olabiliyor.
+
+18:00 hero section: header'ın altındaki kısıma dedi.

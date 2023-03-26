@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- sidebar -->
+    <aside class="sidebar">
+      <div class="profile">
+        <div class="profile-image">
+          <img src="./assets/profile.jpg" alt="Ildiko Gaspar" />
+        </div>
+        <div class="profile-body">
+          <h2>Ildiko Gaspar</h2>
+          <p>@igaspar ğ</p>
+        </div>
+      </div>
+      <nav>
+        <a class="nav-item" class="nav-item" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-general.svg" alt="general-icon" />
+          </div>
+          General</a
+        >
+        <a class="nav-item" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-password.svg" alt="general-password" />
+          </div>
+          Password</a
+        >
+        <a class="nav-item" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-invitations.svg" alt="icon-invitations" />
+          </div>
+          Invitations</a
+        >
+        <a class="nav-item active" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-billing.svg" alt="icon-billing" />
+          </div>
+          Billing</a
+        >
+        <a class="nav-item" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-apps.svg" alt="icon-Apps" />
+          </div>
+          Apps</a
+        >
+        <a class="nav-item" href="#">
+          <div class="nav-item-icon">
+            <img src="./assets/icon-logout.svg" alt="icon-logout" />
+          </div>
+          Logout</a
+        >
+      </nav>
+    </aside>
+
+    <!-- main -->
+    <main>
+      <h1>Billing</h1>
+      <div class="main-wrapper">
+        <div class="main-wrapper-left">
+          <section id="order-history">
+            <h2 class="section-title">Order History</h2>
+            <p class="section-description">
+              Manage billing information and view receips
+            </p>
+            <div class="section-content">
+              <div class="table">
+                <div class="row">
+                  <div class="column"><h2>Date</h2></div>
+                  <div class="column"><h2>Type</h2></div>
+                  <div class="column"><h2>Receipt</h2></div>
+                </div>
+                <div class="row">
+                  <div class="column"><p>Oct. 21, 2021</p></div>
+                  <div class="column"><p>Pro Annual</p></div>
+                  <div class="column"><button>Download</button></div>
+                </div>
+                <div class="row active">
+                  <div class="column"><p>Aug. 21, 2021</p></div>
+                  <div class="column"><p>Pro Portfolio</p></div>
+                  <div class="column"><button>Download</button></div>
+                </div>
+                <div class="row">
+                  <div class="column"><p>July. 21, 2021</p></div>
+                  <div class="column"><p>Sponsored Post</p></div>
+                  <div class="column"><button>Download</button></div>
+                </div>
+                <div class="row">
+                  <div class="column"><p>Jun. 21, 2021</p></div>
+                  <div class="column"><p>Sponsored Post</p></div>
+                  <div class="column"><button>Download</button></div>
+                </div>
+              </div>
+            </div>
+            <a href="#">Load More</a>
+          </section>
+          <section id="payment-method">
+            <h2 class="section-title">Payment Method</h2>
+            <p class="section-description">
+              Manage billing information and view receips
+            </p>
+            <div class="section-content">
+              <div class="visa-icon-image">
+                <img src="./assets/icon-visa.svg" alt="visa" />
+              </div>
+              <p>Visa ending in 2255</p>
+              <button>Remove</button>
+            </div>
+          </section>
+        </div>
+        <div class="main-wrapper-right">
+          <p class="first-paragraf">Your plan</p>
+          <h3>Pro Annual</h3>
+          <p class="second-paragraf">Renews on Nov, 2021</p>
+          <button>Cancel subscription</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

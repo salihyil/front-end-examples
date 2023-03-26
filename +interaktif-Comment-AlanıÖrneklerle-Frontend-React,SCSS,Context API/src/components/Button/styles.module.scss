@@ -1,0 +1,31 @@
+.button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.ghost {
+  color: var(--moderate-blue);
+}
+
+.warning {
+  color: var(--soft-red);
+}
+
+.primary {
+  background-color: var(--moderate-blue);
+  color: var(--white);
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}

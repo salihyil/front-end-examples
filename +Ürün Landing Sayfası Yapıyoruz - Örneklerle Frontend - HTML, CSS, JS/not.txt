@@ -1,0 +1,5 @@
+7:50 günümüzde contaier'ların birden fazla olma durumları var. Tüm siteyi bir container'a oturtturursun fakat footer genişliği 100% yayınlaması gerekirse onun container dışında olması gerekir. Container nere lazımsa ora eklenmesi daha doğru.
+
+15:30 birden fazla button türü var.
+ <button class="button primarty-button" >
+  <button class="button secondary-button" >

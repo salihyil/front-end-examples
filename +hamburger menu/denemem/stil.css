@@ -1,0 +1,136 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 1000px;
+}
+
+.container {
+  max-width: 1024px;
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* header */
+header {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 5px 10px 1px rgba(0, 0, 0, 0.2);
+  color: black;
+  height: 50px;
+}
+header .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+header .navbar-container .logo {
+  font-weight: 800;
+  font-size: 32px;
+}
+.menu-items {
+  display: flex;
+  gap: 24px;
+}
+.menu-items li {
+  font-size: 1.2rem;
+}
+.menu-items a {
+  color: #444;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+.menu-items a:hover {
+  color: #117964;
+}
+.hamburger-lines {
+  display: none;
+}
+
+.hamburger-menu-wrapper {
+  display: none;
+}
+/* overlay */
+#overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .navbar-container {
+    position: relative;
+    flex-direction: row-reverse;
+  }
+  .navbar-container .menu-items {
+    display: none;
+  }
+  .navbar-container .hamburger-lines {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 35px;
+    justify-content: space-between;
+    height: 23px;
+    border-radius: 10px;
+  }
+  .navbar-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #333;
+  }
+
+  /* overlay */
+  #overlay {
+    display: block;
+    position: absolute;
+    background-color: rgb(0 0 0 / 40%);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 100vh;
+    z-index: 1;
+
+    transition: transform 1s ease-in-out;
+    transform: translate(-150%);
+  }
+  #overlay:has(~ .hamburger-menu-open) {
+    transform: translate(0);
+  }
+
+  /* hamburger-menu */
+
+  .hamburger-menu-wrapper {
+    display: block;
+    background-color: white;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    width: 30ch;
+    z-index: 2;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 5px 0px 10px 0px #aaa;
+    padding: 25px 0 0 25px;
+
+    transition: transform 1s ease-in-out;
+    transform: translate(-150%);
+  }
+  .hamburger-menu-wrapper .hamburger-menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .hamburger-menu-wrapper:is(.hamburger-menu-open) {
+    transform: translateX(0);
+  }
+  .hamburger-menu-close-wrapper {
+    margin-bottom: 20px;
+  }
+  .hamburger-menu-close {
+    font-size: 24px;
+  }
+}

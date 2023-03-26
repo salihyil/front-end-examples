@@ -1,0 +1,12 @@
+textarea {
+  width: 100%;
+  resize: none;
+  border: 1px solid var(--light-gray);
+  padding: 16px;
+  border-radius: 8px;
+  transition: all 2s ease;
+
+  &:hover {
+    border-color: var(--moderate-blue);
+  }
+}
